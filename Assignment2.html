@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title> Calculator</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body style="background-color: bisque;">
+
+
+    <center>
+
+
+        <table>
+            <p>Assignment 2 to make calculator:</p>
+            <hr>
+
+            <h1>
+                calculator
+                <img src="cal.png" alt="">
+            </h1>
+
+            <tr>
+                <td>Enter number 1</td>
+
+                <td>
+                    <input type="number" id="num1" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter number 2</td>
+                <td>
+                    <input type="number" id="num2" required="required">
+                </td>
+            </tr>
+            <tr>
+                   <td>Result</td>
+                <td>
+                    <input type="number" id ="res" value="" >
+                </td>
+            </tr>
+             <br>
+        </table>
+       
+        <button style="background-color: aqua; " onclick="Addition()">Addition<button>
+                &nbsp;
+                <button style="background-color:aqua; color:blueviolet ;" onclick ="Subtraction()">Subtraction</button>
+                &nbsp;
+                <button style="background-color:aqua ;" onclick = "Multiplication ()"> Multiplication</button>
+                &nbsp;
+                <button style="background-color:aqua ;" onclick ="Division ()"> Division</button>
+
+
+
+    </center>
+    <script>
+        function Addition() {
+            debugger;
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 =parseInt(document.getElementById("num2").value);
+            var res= num1 +num2;
+            var result = document.getElementById("res");
+            result.value =res;
+        }
+
+        function Subtraction() {
+            debugger;
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 =parseInt(document.getElementById("num2").value);
+            var res= num1 -num2;
+            var result = document.getElementById("res");
+            result.value =res;
+        }
+        function Multiplication() {
+            debugger;
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 =parseInt(document.getElementById("num2").value);
+            var res= num1 *num2;
+            var result = document.getElementById("res");
+            result.value =res;
+        }
+        function Division() {
+            debugger;
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 =parseInt(document.getElementById("num2").value);
+            var res= num1/num2;
+            var result = document.getElementById("res");
+            result.value =res;
+        }
+    </script>
+</body>
+
+</html>
